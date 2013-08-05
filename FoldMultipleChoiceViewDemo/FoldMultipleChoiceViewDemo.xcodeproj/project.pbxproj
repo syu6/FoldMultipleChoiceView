@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5933AE1F17AF6B0C00FE019F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5933AE1E17AF6B0C00FE019F /* UIKit.framework */; };
+		5933AE2117AF6B0C00FE019F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5933AE2017AF6B0C00FE019F /* Foundation.framework */; };
+		5933AE2317AF6B0C00FE019F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5933AE2217AF6B0C00FE019F /* CoreGraphics.framework */; };
+		5933AE2917AF6B0C00FE019F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5933AE2717AF6B0C00FE019F /* InfoPlist.strings */; };
+		5933AE2B17AF6B0C00FE019F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5933AE2A17AF6B0C00FE019F /* main.m */; };
+		5933AE2F17AF6B0C00FE019F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5933AE2E17AF6B0C00FE019F /* AppDelegate.m */; };
+		5933AE3117AF6B0C00FE019F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5933AE3017AF6B0C00FE019F /* Default.png */; };
+		5933AE3317AF6B0C00FE019F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5933AE3217AF6B0C00FE019F /* Default@2x.png */; };
+		5933AE3517AF6B0C00FE019F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5933AE3417AF6B0C00FE019F /* Default-568h@2x.png */; };
+		5933AE3E17AF6B3600FE019F /* FoldMultipleChoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5933AE3D17AF6B3600FE019F /* FoldMultipleChoiceView.m */; };
+		5933AE4117AF6BD900FE019F /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5933AE4017AF6BD900FE019F /* HeaderView.m */; };
+		5933AE4417AF731F00FE019F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5933AE4317AF731F00FE019F /* MainViewController.m */; };
+		5933AE4617AF759900FE019F /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5933AE4517AF759900FE019F /* images */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5933AE1B17AF6B0C00FE019F /* FoldMultipleChoiceViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoldMultipleChoiceViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5933AE1E17AF6B0C00FE019F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5933AE2017AF6B0C00FE019F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5933AE2217AF6B0C00FE019F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5933AE2617AF6B0C00FE019F /* FoldMultipleChoiceViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoldMultipleChoiceViewDemo-Info.plist"; sourceTree = "<group>"; };
+		5933AE2817AF6B0C00FE019F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5933AE2A17AF6B0C00FE019F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5933AE2C17AF6B0C00FE019F /* FoldMultipleChoiceViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoldMultipleChoiceViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		5933AE2D17AF6B0C00FE019F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5933AE2E17AF6B0C00FE019F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5933AE3017AF6B0C00FE019F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5933AE3217AF6B0C00FE019F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5933AE3417AF6B0C00FE019F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5933AE3C17AF6B3600FE019F /* FoldMultipleChoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldMultipleChoiceView.h; sourceTree = "<group>"; };
+		5933AE3D17AF6B3600FE019F /* FoldMultipleChoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldMultipleChoiceView.m; sourceTree = "<group>"; };
+		5933AE3F17AF6BD900FE019F /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		5933AE4017AF6BD900FE019F /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		5933AE4217AF731F00FE019F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5933AE4317AF731F00FE019F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5933AE4517AF759900FE019F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5933AE1817AF6B0C00FE019F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933AE1F17AF6B0C00FE019F /* UIKit.framework in Frameworks */,
+				5933AE2117AF6B0C00FE019F /* Foundation.framework in Frameworks */,
+				5933AE2317AF6B0C00FE019F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5933AE1217AF6B0C00FE019F = {
+			isa = PBXGroup;
+			children = (
+				5933AE2417AF6B0C00FE019F /* FoldMultipleChoiceViewDemo */,
+				5933AE1D17AF6B0C00FE019F /* Frameworks */,
+				5933AE1C17AF6B0C00FE019F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5933AE1C17AF6B0C00FE019F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5933AE1B17AF6B0C00FE019F /* FoldMultipleChoiceViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5933AE1D17AF6B0C00FE019F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5933AE1E17AF6B0C00FE019F /* UIKit.framework */,
+				5933AE2017AF6B0C00FE019F /* Foundation.framework */,
+				5933AE2217AF6B0C00FE019F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5933AE2417AF6B0C00FE019F /* FoldMultipleChoiceViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5933AE3B17AF6B2200FE019F /* FoldMultipleChoiceView */,
+				5933AE2D17AF6B0C00FE019F /* AppDelegate.h */,
+				5933AE2E17AF6B0C00FE019F /* AppDelegate.m */,
+				5933AE2517AF6B0C00FE019F /* Supporting Files */,
+				5933AE4217AF731F00FE019F /* MainViewController.h */,
+				5933AE4317AF731F00FE019F /* MainViewController.m */,
+			);
+			path = FoldMultipleChoiceViewDemo;
+			sourceTree = "<group>";
+		};
+		5933AE2517AF6B0C00FE019F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5933AE4517AF759900FE019F /* images */,
+				5933AE2617AF6B0C00FE019F /* FoldMultipleChoiceViewDemo-Info.plist */,
+				5933AE2717AF6B0C00FE019F /* InfoPlist.strings */,
+				5933AE2A17AF6B0C00FE019F /* main.m */,
+				5933AE2C17AF6B0C00FE019F /* FoldMultipleChoiceViewDemo-Prefix.pch */,
+				5933AE3017AF6B0C00FE019F /* Default.png */,
+				5933AE3217AF6B0C00FE019F /* Default@2x.png */,
+				5933AE3417AF6B0C00FE019F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5933AE3B17AF6B2200FE019F /* FoldMultipleChoiceView */ = {
+			isa = PBXGroup;
+			children = (
+				5933AE3C17AF6B3600FE019F /* FoldMultipleChoiceView.h */,
+				5933AE3D17AF6B3600FE019F /* FoldMultipleChoiceView.m */,
+				5933AE3F17AF6BD900FE019F /* HeaderView.h */,
+				5933AE4017AF6BD900FE019F /* HeaderView.m */,
+			);
+			path = FoldMultipleChoiceView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5933AE1A17AF6B0C00FE019F /* FoldMultipleChoiceViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5933AE3817AF6B0C00FE019F /* Build configuration list for PBXNativeTarget "FoldMultipleChoiceViewDemo" */;
+			buildPhases = (
+				5933AE1717AF6B0C00FE019F /* Sources */,
+				5933AE1817AF6B0C00FE019F /* Frameworks */,
+				5933AE1917AF6B0C00FE019F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoldMultipleChoiceViewDemo;
+			productName = FoldMultipleChoiceViewDemo;
+			productReference = 5933AE1B17AF6B0C00FE019F /* FoldMultipleChoiceViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5933AE1317AF6B0C00FE019F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = syu6;
+			};
+			buildConfigurationList = 5933AE1617AF6B0C00FE019F /* Build configuration list for PBXProject "FoldMultipleChoiceViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5933AE1217AF6B0C00FE019F;
+			productRefGroup = 5933AE1C17AF6B0C00FE019F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5933AE1A17AF6B0C00FE019F /* FoldMultipleChoiceViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5933AE1917AF6B0C00FE019F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933AE2917AF6B0C00FE019F /* InfoPlist.strings in Resources */,
+				5933AE3117AF6B0C00FE019F /* Default.png in Resources */,
+				5933AE3317AF6B0C00FE019F /* Default@2x.png in Resources */,
+				5933AE3517AF6B0C00FE019F /* Default-568h@2x.png in Resources */,
+				5933AE4617AF759900FE019F /* images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5933AE1717AF6B0C00FE019F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933AE2B17AF6B0C00FE019F /* main.m in Sources */,
+				5933AE2F17AF6B0C00FE019F /* AppDelegate.m in Sources */,
+				5933AE3E17AF6B3600FE019F /* FoldMultipleChoiceView.m in Sources */,
+				5933AE4117AF6BD900FE019F /* HeaderView.m in Sources */,
+				5933AE4417AF731F00FE019F /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5933AE2717AF6B0C00FE019F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5933AE2817AF6B0C00FE019F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5933AE3617AF6B0C00FE019F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5933AE3717AF6B0C00FE019F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5933AE3917AF6B0C00FE019F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoldMultipleChoiceViewDemo/FoldMultipleChoiceViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "FoldMultipleChoiceViewDemo/FoldMultipleChoiceViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5933AE3A17AF6B0C00FE019F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoldMultipleChoiceViewDemo/FoldMultipleChoiceViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "FoldMultipleChoiceViewDemo/FoldMultipleChoiceViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5933AE1617AF6B0C00FE019F /* Build configuration list for PBXProject "FoldMultipleChoiceViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5933AE3617AF6B0C00FE019F /* Debug */,
+				5933AE3717AF6B0C00FE019F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5933AE3817AF6B0C00FE019F /* Build configuration list for PBXNativeTarget "FoldMultipleChoiceViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5933AE3917AF6B0C00FE019F /* Debug */,
+				5933AE3A17AF6B0C00FE019F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5933AE1317AF6B0C00FE019F /* Project object */;
+}
