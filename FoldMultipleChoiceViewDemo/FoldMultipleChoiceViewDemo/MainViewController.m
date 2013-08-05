@@ -11,9 +11,13 @@
 
 @interface MainViewController ()
 - (void)initComponets;
+- (void)filterContent:(id)sender;
+
+@property (nonatomic, strong) FoldMultipleChoiceView *foldMultipleChoiceView;
 @end
 
 @implementation MainViewController
+@synthesize foldMultipleChoiceView;
 
 - (void)initComponets{
     /*
@@ -31,7 +35,7 @@
      */
     CGSize screenSize = [UIScreen mainScreen].applicationFrame.size;
     //第1步 创建FoldMultipleChoiceView
-    FoldMultipleChoiceView *foldMultipleChoiceView = [[FoldMultipleChoiceView alloc] initWithFrame:CGRectMake(0, 0, screenSize.width, screenSize.height)];
+    self.foldMultipleChoiceView = [[FoldMultipleChoiceView alloc] initWithFrame:CGRectMake(0, 44, screenSize.width, screenSize.height - 44)];
 
     //属性赋值
     NSMutableArray *hArray = [NSMutableArray arrayWithArray:@[@"商品类型",@"材质",@"标签"]];
@@ -46,16 +50,60 @@
 
     //第2步 设置对应的headerContentArray,contentDict,headerHeight,cellHeight
     //(可以选择FoldMultipleChoiceView的其他初始化方法，减少单独设置属性)
-    foldMultipleChoiceView.headerContentArray = hArray;
-    foldMultipleChoiceView.contentDict = cDict;
+    self.foldMultipleChoiceView.headerContentArray = hArray;
+    self.foldMultipleChoiceView.contentDict = cDict;
     
-    foldMultipleChoiceView.headerHeight = 44.0f;
-    foldMultipleChoiceView.cellHeight = 44.0f;
+    self.foldMultipleChoiceView.headerHeight = 44.0f;
+    self.foldMultipleChoiceView.cellHeight = 44.0f;
     
     //启动
-    [foldMultipleChoiceView setup];
+    [self.foldMultipleChoiceView setup];
     
-    [self.view addSubview:foldMultipleChoiceView];
+    [self.view addSubview:self.foldMultipleChoiceView];
+    
+    //点击获取所有用户所选择的内容
+    UIButton *finishButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    finishButton.frame = CGRectMake(250.0f, 7.0f, 50.0f, 30.0f);
+    [finishButton setTitle:@"完成"
+                  forState:UIControlStateNormal];
+    [finishButton addTarget:self
+                     action:@selector(filterContent:)
+           forControlEvents:UIControlEventTouchUpInside];
+    finishButton.backgroundColor = [UIColor colorWithRed:122.0f / 255.0f
+                                                   green:122.0f / 255.0f
+                                                    blue:122.0f / 255.0f
+                                                   alpha:1.0f];
+    [self.view addSubview:finishButton];
+}
+- (void)filterContent:(id)sender{
+    /*
+     获取用户选择的内容1:
+        1.通过foldMultipleChoiceView对象的selectedContentKeyValueDict或者selectedContentIndexValueDict方法来判断用户选择的内容。
+     */
+    NSMutableDictionary *selectedValueDict = self.foldMultipleChoiceView.selectedContentKeyValueDict;
+    if (selectedValueDict.count == 0) {
+        NSLog(@"----------用户没有选择任何内容");
+    } else {
+        for (NSString *key in selectedValueDict) {
+            NSLog(@"------key=%@   value=%@",key,[selectedValueDict objectForKey:key]);
+        }
+    }
+    
+    
+    /*
+     获取用户选择的内容2:
+        1.key为对应HeaderView的index，value为对应Cell的值
+    */
+    /*
+    NSMutableDictionary *selectedIndexValueDict = self.foldMultipleChoiceView.selectedContentIndexValueDict;
+    if (selectedIndexValueDict.count == 0) {
+        NSLog(@"----------用户没有选择任何内容");
+    } else {
+        for (NSString *key in selectedIndexValueDict) {
+            NSLog(@"------key=%@   value=%@",key,[selectedIndexValueDict objectForKey:key]);
+        }
+    }
+     */
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

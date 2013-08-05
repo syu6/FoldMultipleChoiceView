@@ -317,6 +317,54 @@
         scrollView.contentInset = UIEdgeInsetsMake(-headerHeight, 0, 0, 0);
     }
 }
+
+- (NSMutableDictionary *)selectedContentKeyValueDict{
+    NSMutableDictionary *selectedDict = [NSMutableDictionary dictionary];
+    for (NSString *section in self.statusDict.allKeys) {
+        NSMutableArray *statusArray = [self.statusDict objectForKey:section];
+        NSString *key = [self.headerContentArray objectAtIndex:section.integerValue];
+        NSMutableArray *contents = [self.contentDict objectForKey:key];
+        BOOL isSelected = NO;
+        NSMutableArray *cArray = [NSMutableArray array];
+        for (NSInteger i = 0; i < statusArray.count; i++) {
+            NSNumber *status = [statusArray objectAtIndex:i];
+            if ([status boolValue]) {
+                isSelected = YES;
+                NSString *value = [contents objectAtIndex:i];
+                [cArray addObject:value];
+            }
+        }
+        if (isSelected) {
+            [selectedDict setObject:cArray
+                             forKey:key];
+        }
+    }
+    return selectedDict;
+}
+
+- (NSMutableDictionary *)selectedContentIndexValueDict{
+    NSMutableDictionary *selectedDict = [NSMutableDictionary dictionary];
+    for (NSString *section in self.statusDict.allKeys) {
+        NSMutableArray *statusArray = [self.statusDict objectForKey:section];
+        NSString *key = [self.headerContentArray objectAtIndex:section.integerValue];
+        NSMutableArray *contents = [self.contentDict objectForKey:key];
+        BOOL isSelected = NO;
+        NSMutableArray *cArray = [NSMutableArray array];
+        for (NSInteger i = 0; i < statusArray.count; i++) {
+            NSNumber *status = [statusArray objectAtIndex:i];
+            if ([status boolValue]) {
+                isSelected = YES;
+                NSString *value = [contents objectAtIndex:i];
+                [cArray addObject:value];
+            }
+        }
+        if (isSelected) {
+            [selectedDict setObject:cArray
+                             forKey:section];
+        }
+    }
+    return selectedDict;
+}
 @end
 
 
